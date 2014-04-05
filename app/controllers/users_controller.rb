@@ -39,9 +39,9 @@ class UsersController < ApplicationController
 
   end
 
-  def destory
-    User.find(params[:id]).destory
-    flash[:success] = "User destory"
+  def destroy
+    User.find(params[:id]).destroy
+    flash[:success] = "User destroy"
     redirect_to users_url
   end
 
